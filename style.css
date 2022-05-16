@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+}
+
+.bg{
+    background: url('https://images.unsplash.com/photo-1598084991519-c90900bc9df0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80') no-repeat center/cover;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: calc(100vw + 80px);
+    height: calc(100vh + 80px);
+    z-index: -1;
+    filter: blur(30px);
+}
+
+.button{
+    display: inline;
+    /* width: 200px; */
+    border: 5px double blueviolet;
+    padding: 25px 50px;
+    color: blueviolet;
+    border-radius: 70px;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    font-size: 30px;
+    margin: auto;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.button:hover{
+    background-color: blueviolet;
+    /* border: 5px double whitesmoke; */
+    color: whitesmoke;
+    font-size: 40px;
+    padding: 30px 60px;
+    top: 49%;
+    left: 41%;
+    box-shadow: 10px 10px 10px rgb(53, 20, 85);
+}
+
+.loading-text {
+    position: absolute;
+    top: 60vh;
+    left: 49%;
+    font-size: 30px;
+    color: #fff;
+}
+.progress{
+    position: absolute;
+    top: 64%;
+    left: 34%;
+    height: 20px;
+    width: 35%;
+    border: 5px solid #f4a261;
+    border-radius: 15px;
+}
+.progress .color{
+    position: absolute;
+    background-color: #ffffff;
+    width: 0px;
+    height: 20px;
+    border-radius: 15px;
+    animation: progres 3s linear;    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 25%;
+    }
+    40%{
+        width: 75%;
+    }
+    60%{
+        width: 75%;
+    }
+    80%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
